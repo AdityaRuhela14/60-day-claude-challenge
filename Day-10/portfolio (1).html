@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aditya Ruhela | Data Analyst & GenAI Builder</title>
+
+<meta name="description" content="Aditya Ruhela - Data Analyst, GenAI Builder, and Business Intelligence Enthusiast. Explore projects, skills, achievements, and professional experience.">
+<meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Machine Learning, GenAI, Portfolio, Data Science">
+<meta name="author" content="Aditya Ruhela">
+
+<meta property="og:title" content="Aditya Ruhela Portfolio">
+<meta property="og:description" content="Data Analyst | Business Intelligence | AI Solutions">
+<meta property="og:type" content="website">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+overflow-x:hidden;
+}
+
+.gradient-text{
+background:linear-gradient(135deg,#8B5CF6,#14B8A6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-bg{
+background:
+radial-gradient(circle at top left, rgba(139,92,246,.25), transparent 35%),
+radial-gradient(circle at bottom right, rgba(20,184,166,.20), transparent 35%);
+}
+
+.glass{
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:.8s ease;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.typing::after{
+content:"|";
+animation:blink .7s infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+
+.skill-bar{
+width:0;
+transition:width 2s ease;
+}
+
+.project-card{
+transition:.4s ease;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.nav-active{
+color:#8B5CF6 !important;
+font-weight:700;
+}
+
+.glow{
+box-shadow:0 0 30px rgba(139,92,246,.3);
+}
+</style>
+</head>
+
+<body class="bg-slate-950 text-white transition-all duration-300">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h2 class="font-black text-xl gradient-text">
+ADITYA RUHELA
+</h2>
+
+<div class="hidden md:flex gap-8 text-sm">
+<a href="#home" class="nav-link hover:text-purple-400">Home</a>
+<a href="#about" class="nav-link hover:text-purple-400">About</a>
+<a href="#skills" class="nav-link hover:text-purple-400">Skills</a>
+<a href="#projects" class="nav-link hover:text-purple-400">Projects</a>
+<a href="#achievements" class="nav-link hover:text-purple-400">Achievements</a>
+<a href="#contact" class="nav-link hover:text-purple-400">Contact</a>
+</div>
+
+<button id="themeToggle" class="bg-slate-800 px-3 py-2 rounded-lg">
+🌙
+</button>
+
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center hero-bg">
+
+<div class="max-w-7xl mx-auto px-6 w-full">
+
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+
+<div>
+
+<p class="uppercase tracking-[4px] text-teal-400 mb-4">
+Welcome To My Portfolio
+</p>
+
+<h1 class="text-5xl md:text-7xl font-black leading-tight">
+Hi, I'm
+</h1>
+
+<h1 class="text-5xl md:text-7xl font-black gradient-text mb-6">
+Aditya Ruhela
+</h1>
+
+<h2 class="text-2xl md:text-3xl text-slate-300 mb-6">
+<span id="typingText" class="typing"></span>
+</h2>
+
+<p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
+I am a Data Analyst with a strong interest in analytics, business intelligence,
+and AI-driven solutions. I leverage tools such as Python, SQL, Power BI, and Excel
+to analyze data, identify patterns, and create data-driven strategies. My goal is
+to bridge the gap between data and decision-making through meaningful insights.
+</p>
+
+<div class="flex flex-wrap gap-4 mt-8">
+
+<a href="https://www.linkedin.com/in/adityaruhela14/"
+target="_blank"
+class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 font-semibold">
+LinkedIn
+</a>
+
+<a href="https://github.com/dashboard"
+target="_blank"
+class="px-6 py-3 rounded-xl border border-slate-700 hover:border-teal-400">
+GitHub
+</a>
+
+<a href="#contact"
+class="px-6 py-3 rounded-xl bg-teal-500 text-black font-bold">
+Contact Me
+</a>
+
+</div>
+
+</div>
+
+<div class="flex justify-center">
+
+<div class="w-80 h-80 rounded-full glow bg-gradient-to-r from-purple-600 to-teal-500 p-1">
+
+<div class="w-full h-full rounded-full bg-slate-950 flex items-center justify-center text-8xl">
+📊
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24">
+
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-10 gradient-text">
+About Me
+</h2>
+
+<div class="glass rounded-3xl p-10">
+
+<p class="text-lg text-slate-300 leading-relaxed">
+I am an aspiring Data Analyst passionate about transforming raw data into actionable insights.
+My expertise spans data analysis, visualization, business intelligence, and AI-powered applications.
+I enjoy building solutions that help organizations make smarter, faster, and more informed decisions.
+</p>
+
+<div class="grid md:grid-cols-3 gap-8 mt-10">
+
+<div>
+<h4 class="text-purple-400 font-bold mb-2">Location</h4>
+<p>Ghaziabad, India</p>
+</div>
+
+<div>
+<h4 class="text-purple-400 font-bold mb-2">Email</h4>
+<p>aadiitya523@gmail.com</p>
+</div>
+
+<div>
+<h4 class="text-purple-400 font-bold mb-2">Focus Areas</h4>
+<p>Analytics • BI • AI Solutions</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-slate-900/40">
+
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-12 gradient-text">
+Skills & Technologies
+</h2>
+
+<div class="grid lg:grid-cols-2 gap-12">
+
+<div>
+
+<h3 class="text-2xl font-semibold mb-6">
+Technical Skills
+</h3>
+
+<div class="space-y-6">
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Python</span>
+<span>95%</span>
+</div>
+<div class="bg-slate-800 h-3 rounded-full">
+<div class="skill-bar bg-purple-500 h-3 rounded-full" data-width="95%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>SQL</span>
+<span>90%</span>
+</div>
+<div class="bg-slate-800 h-3 rounded-full">
+<div class="skill-bar bg-teal-500 h-3 rounded-full" data-width="90%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Power BI</span>
+<span>88%</span>
+</div>
+<div class="bg-slate-800 h-3 rounded-full">
+<div class="skill-bar bg-purple-500 h-3 rounded-full" data-width="88%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Machine Learning</span>
+<span>85%</span>
+</div>
+<div class="bg-slate-800 h-3 rounded-full">
+<div class="skill-bar bg-teal-500 h-3 rounded-full" data-width="85%"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 class="text-2xl font-semibold mb-6">
+Tools & Soft Skills
+</h3>
+
+<div class="flex flex-wrap gap-3 mb-8">
+
+<span class="px-4 py-2 rounded-full bg-purple-500/20">VS Code</span>
+<span class="px-4 py-2 rounded-full bg-teal-500/20">Jupyter</span>
+<span class="px-4 py-2 rounded-full bg-purple-500/20">Power BI</span>
+<span class="px-4 py-2 rounded-full bg-teal-500/20">Excel</span>
+<span class="px-4 py-2 rounded-full bg-purple-500/20">Git</span>
+<span class="px-4 py-2 rounded-full bg-teal-500/20">Streamlit</span>
+
+</div>
+
+<div class="flex flex-wrap gap-3">
+
+<span class="px-4 py-2 border border-slate-700 rounded-full">Leadership</span>
+<span class="px-4 py-2 border border-slate-700 rounded-full">Communication</span>
+<span class="px-4 py-2 border border-slate-700 rounded-full">Problem Solving</span>
+<span class="px-4 py-2 border border-slate-700 rounded-full">Critical Thinking</span>
+<span class="px-4 py-2 border border-slate-700 rounded-full">Team Collaboration</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-12 gradient-text">
+Featured Projects
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<div class="glass rounded-3xl p-6 project-card">
+<h3 class="text-xl font-bold mb-4">
+🌿 Plant Disease Detection System
+</h3>
+<p class="text-slate-400 mb-5">
+A deep learning web application that predicts plant leaf diseases
+from uploaded images using a trained model on the PlantVillage dataset.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">PyTorch</span>
+<span class="text-xs px-3 py-1 rounded-full bg-teal-500/20">FastAPI</span>
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">Python</span>
+</div>
+</div>
+
+<div class="glass rounded-3xl p-6 project-card">
+<h3 class="text-xl font-bold mb-4">
+🤖 AI-Powered Analytics Dashboard
+</h3>
+<p class="text-slate-400 mb-5">
+Intelligent dashboard that analyzes call recordings and CRM data to
+generate transcripts, sentiment insights, recommendations, and reports.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">Streamlit</span>
+<span class="text-xs px-3 py-1 rounded-full bg-teal-500/20">Whisper</span>
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">Transformers</span>
+</div>
+</div>
+
+<div class="glass rounded-3xl p-6 project-card">
+<h3 class="text-xl font-bold mb-4">
+📈 EDA & Data Pre-processing Tool
+</h3>
+<p class="text-slate-400 mb-5">
+Interactive EDA platform allowing users to upload datasets,
+clean data, visualize trends, and download processed datasets.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">Pandas</span>
+<span class="text-xs px-3 py-1 rounded-full bg-teal-500/20">Matplotlib</span>
+<span class="text-xs px-3 py-1 rounded-full bg-purple-500/20">Streamlit</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="py-24 bg-slate-900/40">
+
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-12 gradient-text">
+Achievements & Certifications
+</h2>
+
+<div class="space-y-6">
+
+<div class="glass p-6 rounded-2xl">
+🏆 Data Analytics Internship / Industry Experience
+</div>
+
+<div class="glass p-6 rounded-2xl">
+📜 Machine Learning, Data Science & AI Certifications
+</div>
+
+<div class="glass p-6 rounded-2xl">
+🥇 Hackathons, Technical Competitions & Academic Achievements
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24">
+
+<div class="max-w-6xl mx-auto px-6 fade-up">
+
+<h2 class="text-4xl font-bold mb-12 gradient-text">
+Let's Connect
+</h2>
+
+<div class="grid lg:grid-cols-2 gap-10">
+
+<form class="glass rounded-3xl p-8 space-y-5">
+
+<input
+type="text"
+placeholder="Your Name"
+class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700 outline-none">
+
+<input
+type="email"
+placeholder="Your Email"
+class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700 outline-none">
+
+<textarea
+rows="5"
+placeholder="Your Message"
+class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700 outline-none"></textarea>
+
+<button
+type="submit"
+class="w-full py-4 rounded-xl bg-gradient-to-r from-purple-600 to-teal-500 font-bold">
+Send Message
+</button>
+
+</form>
+
+<div class="glass rounded-3xl p-8">
+
+<h3 class="text-2xl font-bold mb-6">
+Contact Information
+</h3>
+
+<div class="space-y-4">
+
+<p>📍 Ghaziabad, India</p>
+
+<p>📧 aadiitya523@gmail.com</p>
+
+<p>
+🔗
+<a href="https://www.linkedin.com/in/adityaruhela14/"
+target="_blank"
+class="text-purple-400">
+LinkedIn Profile
+</a>
+</p>
+
+<p>
+💻
+<a href="https://github.com/dashboard"
+target="_blank"
+class="text-teal-400">
+GitHub Profile
+</a>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="py-8 border-t border-slate-800 text-center text-slate-500">
+© <span id="year"></span> Aditya Ruhela. All Rights Reserved.
+</footer>
+
+<script>
+document.getElementById("year").innerText=new Date().getFullYear();
+
+const roles=[
+"Data Analyst",
+"Business Intelligence Enthusiast",
+"GenAI Builder",
+"Machine Learning Practitioner",
+"AI Solutions Developer"
+];
+
+let roleIndex=0;
+let charIndex=0;
+
+function typeEffect(){
+const currentRole=roles[roleIndex];
+
+document.getElementById("typingText").textContent=
+currentRole.substring(0,charIndex);
+
+charIndex++;
+
+if(charIndex<=currentRole.length){
+setTimeout(typeEffect,90);
+}
+else{
+setTimeout(()=>{
+charIndex=0;
+roleIndex=(roleIndex+1)%roles.length;
+typeEffect();
+},1500);
+}
+}
+
+typeEffect();
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:0.15});
+
+document.querySelectorAll(".fade-up")
+.forEach(el=>observer.observe(el));
+
+const skillObserver=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+document.querySelectorAll(".skill-bar")
+.forEach(bar=>{
+bar.style.width=bar.dataset.width;
+});
+}
+});
+});
+
+skillObserver.observe(document.querySelector("#skills"));
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop-200;
+
+if(window.scrollY>=sectionTop){
+current=section.getAttribute("id");
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("nav-active");
+
+if(link.getAttribute("href")==="#"+current){
+link.classList.add("nav-active");
+}
+
+});
+
+});
+
+const toggle=document.getElementById("themeToggle");
+
+toggle.addEventListener("click",()=>{
+
+document.documentElement.classList.toggle("dark");
+
+if(document.documentElement.classList.contains("dark")){
+document.body.classList.remove("bg-white","text-slate-900");
+document.body.classList.add("bg-slate-950","text-white");
+toggle.innerHTML="☀️";
+}
+else{
+document.body.classList.remove("bg-slate-950","text-white");
+document.body.classList.add("bg-white","text-slate-900");
+toggle.innerHTML="🌙";
+}
+
+});
+</script>
+
+</body>
+</html>
